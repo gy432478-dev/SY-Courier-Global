@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SY International | International Air Courier &amp; Logistics, Mumbai</title>
+<meta name="description" content="SY International — fast, safe and reliable international air courier & logistics from Mumbai. Documents, parcels, personal baggage and commercial shipments worldwide. USA DDP reference rates.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='8' y='8' width='48' height='48' rx='12' fill='%23e33435'/%3E%3Crect x='4' y='4' width='48' height='48' rx='12' fill='%23071f41'/%3E%3Ctext x='28' y='36' font-family='Arial Black,Arial' font-size='24' font-weight='900' fill='white' text-anchor='middle'%3ESY%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#071f41;--navy-2:#0a2c5b;--red:#e33435;--red-soft:#ef7d7e;--ink:#11243e;--muted:#64748b;--paper:#f7f8fa;--line:#dbe2ea;--green:#21c063;--ease:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:var(--paper);color:var(--ink);font-family:Manrope,sans-serif;overflow-x:hidden}
+::selection{background:var(--red);color:#fff}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer;background:none;border:0;color:inherit}
+img{display:block}
+.wrap{width:min(1180px,calc(100% - 48px));margin:0 auto}
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+
+/* ---------- reveal system ---------- */
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+[data-reveal].in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none}.marquee-track{animation:none!important}}
+
+/* ---------- header ---------- */
+.header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #edf0f4;transition:box-shadow .35s}
+.header.scrolled{box-shadow:0 10px 34px rgba(7,31,65,.09)}
+.header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;transition:height .35s var(--ease)}
+.header.scrolled .header-inner{height:66px}
+.brand{display:flex;align-items:center;gap:11px}
+.brand-mark{width:44px;height:44px;flex:none}
+.brand-mark svg{width:100%;height:100%;display:block}
+.brand-copy{display:flex;flex-direction:column;line-height:1}
+.brand-copy strong{font:800 16px Outfit;letter-spacing:.02em;color:var(--navy)}
+.brand-copy strong em{font-style:normal;color:var(--red)}
+.brand-copy small{font-size:7px;font-weight:800;letter-spacing:.19em;color:#708096;margin-top:6px}
+.nav{display:flex;align-items:center;gap:28px}
+.nav button{color:#536276;font-size:12px;font-weight:700;position:relative;padding:4px 0;transition:color .25s}
+.nav button:not(.nav-cta)::after{content:"";position:absolute;left:0;bottom:-2px;width:100%;height:2px;background:var(--red);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
+.nav button:not(.nav-cta):hover{color:var(--navy)}
+.nav button:not(.nav-cta):hover::after{transform:scaleX(1);transform-origin:left}
+.nav-cta{display:flex;align-items:center;gap:8px;background:var(--navy);color:#fff;padding:13px 17px;border-radius:3px;transition:background .3s,transform .3s}
+.nav-cta:hover{background:var(--red);transform:translateY(-2px)}
+.menu-button{display:none;color:var(--navy)}
+.menu-button svg{width:26px;height:26px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:#f4f6f8;min-height:92vh;display:flex;align-items:center;overflow:hidden}
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(7,31,65,.05) 1px,transparent 1px),linear-gradient(rgba(7,31,65,.05) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(90deg,black,transparent 70%);-webkit-mask-image:linear-gradient(90deg,black,transparent 70%)}
+.hero-content{position:relative;display:grid;grid-template-columns:1.03fr .97fr;gap:65px;align-items:center;padding:90px 0 110px;width:min(1180px,calc(100% - 48px));margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--red);text-transform:uppercase;font-size:10px;font-weight:800;letter-spacing:.18em;opacity:0;animation:fadeUp .8s var(--ease) .15s both}
+.pulse-dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 6px rgba(227,52,53,.11);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 5px rgba(227,52,53,.13)}50%{box-shadow:0 0 0 9px rgba(227,52,53,.05)}}
+.eyebrow i{width:4px;height:4px;background:var(--red);border-radius:50%;opacity:.7}
+.hero h1{font-family:Outfit,sans-serif;font-size:clamp(46px,6vw,78px);line-height:1;letter-spacing:-.055em;margin:24px 0 26px;max-width:660px;color:var(--navy)}
+.hero h1 .accent{color:var(--red)}
+.line{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.line-inner{display:block;transform:translateY(115%);animation:lineUp 1s var(--ease) both}
+.line:nth-child(1) .line-inner{animation-delay:.25s}
+.line:nth-child(2) .line-inner{animation-delay:.37s}
+.line:nth-child(3) .line-inner{animation-delay:.49s}
+@keyframes lineUp{to{transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero-lead{color:#5d6d80;font-size:16px;line-height:1.8;max-width:530px;opacity:0;animation:fadeUp .8s var(--ease) .72s both}
+.hero-actions{display:flex;gap:13px;margin:34px 0;opacity:0;animation:fadeUp .8s var(--ease) .86s both}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;padding:15px 22px;border-radius:3px;font-size:12px;font-weight:800;letter-spacing:.01em;transition:transform .3s var(--ease),box-shadow .3s,background .3s,color .3s}
+.button:hover{transform:translateY(-3px);box-shadow:0 14px 26px rgba(7,31,65,.15)}
+.button:active{transform:translateY(-1px)}
+.button-red{color:#fff;background:var(--red)}
+.button-red:hover{background:#c8282a}
+.button-ghost{color:var(--navy);background:#fff;border:1px solid #dce2e9}
+.button-ghost:hover{border-color:var(--navy)}
+.button-white{background:#fff;color:var(--navy)}
+.button svg{width:16px;height:16px}
+.hero-proof{display:flex;gap:20px;flex-wrap:wrap;color:#6d7c8d;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;opacity:0;animation:fadeUp .8s var(--ease) 1s both}
+.hero-proof span{display:flex;align-items:center;gap:7px}
+.hero-proof svg{color:var(--red);width:16px;height:16px}
+.hero-media{position:relative;opacity:0;animation:fadeUp 1.1s var(--ease) .55s both}
+.media-frame{position:relative;border-radius:4px 44px 4px 44px;overflow:hidden;aspect-ratio:1.08;box-shadow:24px 24px 0 rgba(10,53,108,.1);will-change:transform}
+.media-frame img{width:100%;height:112%;object-fit:cover;will-change:transform}
+.media-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,31,65,.58),transparent 58%)}
+.hero-stamp{position:absolute;left:28px;bottom:27px;color:#fff;display:grid;grid-template-columns:28px auto;column-gap:8px}
+.hero-stamp svg{grid-row:span 2;color:#ffb4b4;margin-top:2px;width:20px;height:20px}
+.hero-stamp strong{font:600 18px Outfit}
+.hero-stamp small{font-size:10px;color:#e9edf3}
+.orbit{position:absolute;border:1px solid rgba(227,52,53,.45);border-radius:50%;transform:rotate(-31deg);z-index:-1}
+.orbit-one{width:210px;height:85px;right:-55px;top:8px;animation:orbitSpin 14s linear infinite}
+.orbit-two{width:300px;height:115px;right:-70px;top:-9px;animation:orbitSpin 22s linear infinite reverse}
+@keyframes orbitSpin{to{transform:rotate(329deg)}}
+
+/* ---------- marquee ---------- */
+.marquee{background:var(--navy);color:#fff;overflow:hidden;padding:20px 0;border-block:1px solid rgba(255,255,255,.08)}
+.marquee-track{display:flex;gap:0;width:max-content;animation:marquee 46s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{display:flex;align-items:center;gap:34px;padding-right:34px;font:600 15px Outfit;letter-spacing:.34em;text-transform:uppercase;white-space:nowrap}
+.marquee-track em{font-style:normal;color:var(--red-soft)}
+.marquee-track .dot{width:6px;height:6px;border-radius:50%;background:var(--red);flex:none}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ---------- trust ---------- */
+.trust-strip{background:#fff;border-bottom:1px solid #e8edf1}
+.trust-grid{display:grid;grid-template-columns:1.35fr repeat(3,1fr);padding:32px 0;gap:20px}
+.trust-intro,.trust-item{display:flex;align-items:center;gap:13px}
+.trust-number{font:700 11px Outfit;color:var(--red);align-self:flex-start}
+.trust-intro strong{font:700 18px/1.15 Outfit;color:var(--navy)}
+.trust-intro div span,.trust-item span{font-size:10px;color:#8995a4;display:block;margin-top:5px}
+.trust-item{border-left:1px solid var(--line);padding-left:27px;transition:transform .3s var(--ease)}
+.trust-item:hover{transform:translateX(4px)}
+.trust-item svg{color:var(--red);width:23px;height:23px;flex:none}
+.trust-item strong{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--navy)}
+
+/* ---------- sections ---------- */
+.section{padding:120px 0}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:50px;margin-bottom:52px}
+.section-label{display:flex;align-items:center;gap:9px;color:var(--red);text-transform:uppercase;font-size:10px;font-weight:800;letter-spacing:.18em}
+.section-label::before{content:"";width:27px;height:1px;background:currentColor}
+.section-label.on-dark{color:var(--red-soft)}
+h2{font-family:Outfit,sans-serif;font-size:clamp(36px,4vw,54px);line-height:1.03;letter-spacing:-.045em;margin:18px 0 0;color:var(--navy);font-weight:700}
+h2 .accent{color:var(--red)}
+.section-head>p{max-width:390px;color:var(--muted);line-height:1.8;font-size:14px}
+
+/* services */
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.service-card{background:#fff;border:1px solid #e2e7ec;min-height:212px;padding:24px;position:relative;transition:transform .35s var(--ease),box-shadow .35s,border-color .35s;overflow:hidden}
+.service-card::before{content:"";position:absolute;inset:auto 0 0 0;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.service-card:hover{transform:translateY(-7px);box-shadow:0 20px 38px rgba(7,31,65,.08);border-color:#cfd8e2}
+.service-card:hover::before{transform:scaleX(1)}
+.service-icon{width:41px;height:41px;background:#edf3fa;color:var(--navy-2);display:grid;place-items:center;border-radius:2px}
+.service-icon svg{width:20px;height:20px}
+.service-index{position:absolute;right:22px;top:25px;color:#b8c2ce;font-size:10px;font-weight:800}
+.service-card h3{font:700 17px/1.15 Outfit;margin:28px 0 8px;color:var(--navy)}
+.service-card p{font-size:11px;line-height:1.55;color:#7a8796;max-width:170px}
+.service-arrow{position:absolute;bottom:22px;right:22px;color:var(--red);width:18px;height:18px;transition:transform .3s var(--ease)}
+.service-card:hover .service-arrow{transform:translate(4px,-4px)}
+
+/* coverage */
+.coverage-section{background:var(--navy);color:#fff;padding:120px 0;position:relative;overflow:hidden}
+.coverage-section::after{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(227,52,53,.16),transparent 65%);pointer-events:none}
+.coverage-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:90px;align-items:center;position:relative;z-index:1}
+.coverage-copy h2{color:#fff}
+.coverage-copy>p{font-size:14px;line-height:1.8;color:#aab9c9;max-width:420px;margin:25px 0 30px}
+.destination-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 10px;margin:30px 0 36px}
+.destination-list span{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:700}
+.destination-list svg{color:#f07c7c;width:15px;height:15px;flex:none}
+.map-card{position:relative;aspect-ratio:1.4;overflow:hidden;border-radius:3px}
+.map-card::before{content:"";position:absolute;inset:0;background:rgba(7,31,65,.48);z-index:1}
+.map-card img{width:100%;height:118%;object-fit:cover;filter:saturate(.6);will-change:transform}
+.map-caption{position:absolute;z-index:2;bottom:26px;left:27px;display:flex;align-items:center;gap:12px}
+.map-caption svg{color:#ff7878;width:19px;height:19px}
+.map-caption strong{font:600 24px Outfit;display:block}
+.map-caption small{display:block;color:#c1ccd8;font-size:10px;margin-top:2px}
+
+/* route prompts */
+.route-section{background:#fff;padding:96px 0}
+.route-inner{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}
+.route-inner>p,.route-copy{color:var(--muted);font-size:14px;line-height:1.8;margin-top:22px;max-width:360px}
+.route-panel{border:1px solid var(--line);background:#f8fafc;box-shadow:0 24px 50px rgba(7,31,65,.06)}
+.route-tabs{display:flex;flex-wrap:wrap;gap:4px;padding:10px;border-bottom:1px solid var(--line)}
+.route-tab{padding:11px 14px;color:#728094;font-size:11px;font-weight:800;border-radius:2px;transition:background .25s,color .25s}
+.route-tab:hover{color:var(--navy)}
+.route-tab.active{background:var(--navy);color:#fff}
+.route-question{padding:30px}
+.route-question small{color:var(--red);font-size:9px;font-weight:800;letter-spacing:.16em}
+.route-question p{font:600 21px/1.4 Outfit;color:var(--navy);margin:12px 0 20px;min-height:60px;transition:opacity .25s}
+.route-question p.swap{opacity:0}
+.text-link{display:inline-flex;align-items:center;gap:10px;border-bottom:1px solid var(--red);color:var(--red);padding:0 0 7px;font-size:12px;font-weight:800;transition:gap .3s var(--ease)}
+.text-link:hover{gap:14px}
+.text-link svg{width:15px;height:15px}
+
+/* process */
+.process-section{background:#fff;padding-top:0}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.process-step{display:flex;gap:20px;padding:34px 30px 16px 0;border-right:1px solid var(--line);margin-right:31px}
+.process-step:last-child{border:0;margin:0}
+.process-step>span{font:700 11px Outfit;color:var(--red)}
+.process-step h3{font:700 20px Outfit;margin:0 0 10px;color:var(--navy)}
+.process-step p{font-size:13px;line-height:1.7;color:var(--muted);max-width:250px}
+
+/* pricing */
+.pricing-section{background:#eef2f6;padding:110px 0}
+.pricing-top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;gap:40px}
+.pricing-note{border-left:2px solid var(--red);padding-left:16px;max-width:230px}
+.pricing-note span{font-size:10px;letter-spacing:.16em;font-weight:800;color:var(--red)}
+.pricing-note p{font-size:12px;color:#788595;line-height:1.6;margin:9px 0 0}
+.rate-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.rate-card{background:#fff;border:1px solid #dfe5eb;padding:24px 22px 21px;display:flex;flex-direction:column;gap:8px;transition:transform .35s var(--ease),box-shadow .35s}
+.rate-card:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(7,31,65,.09)}
+.rate-card small{font-size:10px;font-weight:800;letter-spacing:.08em;color:#657487}
+.rate-card strong{font:700 32px Outfit;color:var(--navy);letter-spacing:-.03em}
+.rate-card span{font-size:10px;color:var(--red);font-weight:800}
+.ipf-row{display:flex;justify-content:space-between;align-items:center;background:var(--navy);color:#fff;padding:18px 22px;margin-top:10px;font-size:12px;font-weight:700}
+.ipf-row span{display:flex;gap:10px;align-items:center}
+.ipf-row svg{color:#ff7c7d;width:18px;height:18px}
+.ipf-row strong{font:600 20px Outfit}
+.ipf-row strong small{font:500 10px Manrope;color:#a7b7c8}
+.disclaimer{font-size:10px;line-height:1.6;color:#718094;margin:15px 0 0}
+
+/* resource strip */
+.resource-strip{background:#fff;border-block:1px solid #e8edf1;padding:30px 0}
+.resource-grid{display:grid;grid-template-columns:1.4fr auto auto;gap:34px;align-items:center}
+.resource-intro{display:flex;align-items:center;gap:15px}
+.resource-intro svg{color:var(--red);width:21px;height:21px;flex:none}
+.resource-intro strong{font:600 18px Outfit;color:var(--navy);display:block}
+.resource-intro span{font-size:11px;color:#7b8999;display:block;margin-top:4px}
+.resource-grid .text-link{margin:0}
+
+/* why */
+.why-section{background:#fff}
+.why-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:120px;align-items:start}
+.why-section .lead-copy{font-size:14px;line-height:1.8;color:var(--muted);max-width:410px;margin-top:25px}
+.why-section .text-link{margin-top:28px}
+.why-points{border-top:1px solid var(--line)}
+.why-point{display:grid;grid-template-columns:45px 1fr;gap:15px;padding:26px 0;border-bottom:1px solid var(--line)}
+.why-point>span{font:700 11px Outfit;color:var(--red)}
+.why-point h3{font:700 19px Outfit;margin:0 0 8px;color:var(--navy)}
+.why-point p{font-size:12px;margin:0;line-height:1.7;color:var(--muted)}
+
+/* quote */
+.quote-section{background:var(--navy);padding:120px 0;color:#fff;position:relative;overflow:hidden}
+.quote-section::before{content:"";position:absolute;left:-160px;bottom:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(227,52,53,.14),transparent 65%);pointer-events:none}
+.quote-grid{display:grid;grid-template-columns:.83fr 1.17fr;gap:110px;align-items:start;position:relative;z-index:1}
+.quote-intro h2{color:#fff;font-size:clamp(38px,4vw,56px)}
+.quote-intro>p{font-size:14px;line-height:1.8;color:#aab9c9;max-width:420px;margin:25px 0}
+.direct-contact{margin-top:70px;display:flex;flex-direction:column;gap:12px}
+.direct-contact span{font-size:10px;color:#9eafc0;text-transform:uppercase;letter-spacing:.12em}
+.direct-contact a{display:inline-flex;gap:8px;align-items:center;font-size:14px;font-weight:700;transition:color .25s}
+.direct-contact a:hover{color:var(--red-soft)}
+.direct-contact a svg{color:var(--red-soft);width:15px;height:15px}
+.quote-form{background:#fff;padding:34px;color:var(--navy);box-shadow:0 34px 70px rgba(0,0,0,.28)}
+.form-heading{display:flex;flex-direction:column;gap:8px;margin-bottom:27px}
+.form-heading span{color:var(--red);font-size:10px;font-weight:800;letter-spacing:.16em}
+.form-heading strong{font:600 25px Outfit}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+label{display:flex;flex-direction:column;gap:7px;font-size:10px;font-weight:800;color:#5b6b7c;margin-bottom:15px;text-transform:uppercase;letter-spacing:.06em}
+input,select,textarea{border:1px solid #dbe2e9;padding:12px 13px;color:var(--navy);font-size:13px;outline:0;background:#fbfcfd;border-radius:2px;transition:border-color .25s,box-shadow .25s;font-family:Manrope}
+textarea{min-height:78px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(227,52,53,.08)}
+.form-submit{width:100%;margin-top:3px}
+.form-footnote{text-align:center;display:block;color:#8996a6;font-size:10px;margin-top:12px}
+
+/* faq */
+.faq-section{background:#fff}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:120px}
+.faq-section .lead-copy{font-size:13px;line-height:1.8;color:var(--muted);margin-top:24px;max-width:330px}
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item>button{width:100%;padding:23px 0;display:flex;justify-content:space-between;align-items:center;text-align:left;font:600 15px Outfit;color:var(--navy);gap:16px}
+.faq-item>button svg{transition:transform .3s var(--ease);color:var(--red);width:18px;height:18px;flex:none}
+.faq-item.open>button svg{transform:rotate(180deg)}
+.faq-answer{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s var(--ease)}
+.faq-item.open .faq-answer{grid-template-rows:1fr}
+.faq-answer>div{overflow:hidden}
+.faq-answer p{font-size:12px;line-height:1.7;color:var(--muted);margin:-6px 35px 22px 0}
+
+/* contact */
+.contact-section{padding:115px 0;background:#f1f4f7}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:110px}
+.contact-section .lead-copy{font-size:14px;line-height:1.8;color:var(--muted);margin-top:22px;max-width:360px}
+.contact-details{display:grid;grid-template-columns:1fr 1fr;gap:33px 30px}
+.contact-detail{display:flex;gap:14px}
+.contact-detail>svg{color:var(--red);width:19px;height:19px;flex:none;margin-top:2px}
+.contact-detail small{display:block;color:#788696;text-transform:uppercase;letter-spacing:.13em;font-size:9px;font-weight:800;margin-bottom:10px}
+.contact-detail address,.contact-detail a{font-style:normal;display:block;color:var(--navy);font-size:12px;line-height:1.7;font-weight:700}
+.contact-detail a:hover{color:var(--red)}
+
+/* directions */
+.directions-section{background:#fff;padding:96px 0}
+.directions-inner{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}
+.directions-card{background:#fff;border:1px solid var(--line);padding:24px;display:flex;gap:16px;align-items:center;transition:transform .35s var(--ease),box-shadow .35s,border-color .35s;box-shadow:0 20px 44px rgba(7,31,65,.05)}
+.directions-card:hover{transform:translateY(-4px);box-shadow:0 28px 54px rgba(7,31,65,.1);border-color:#c9d3de}
+.directions-card>svg{color:var(--red);width:20px;height:20px;flex:none}
+.directions-card span{flex:1}
+.directions-card strong{font:600 18px Outfit;display:block;color:var(--navy)}
+.directions-card small{font-size:11px;color:#778596;display:block;margin-top:4px;line-height:1.5}
+.directions-card .arrow{color:var(--red);width:17px;height:17px;transition:transform .3s var(--ease)}
+.directions-card:hover .arrow{transform:translate(3px,-3px)}
+
+/* final cta */
+.final-cta{background:var(--red);color:#fff;padding:44px 0;position:relative;overflow:hidden}
+.final-cta::after{content:"";position:absolute;inset:0;background:radial-gradient(600px 200px at 80% 50%,rgba(255,255,255,.14),transparent);pointer-events:none}
+.final-inner{display:flex;align-items:center;gap:20px;position:relative;z-index:1}
+.final-inner>svg{opacity:.65;width:20px;height:20px}
+.final-inner div{flex:1}
+.final-inner small{font-size:9px;letter-spacing:.15em;font-weight:800;opacity:.78}
+.final-inner h2{font:600 clamp(24px,3vw,30px) Outfit;margin:4px 0 0;color:#fff;letter-spacing:-.02em}
+
+/* footer */
+.footer{background:var(--navy);color:#fff;padding:64px 0 24px}
+.footer .brand-copy strong{color:#fff}
+.footer-top{display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:80px;padding-bottom:56px}
+.footer-top p{color:#a6b5c6;font-size:12px;line-height:1.7;max-width:280px;margin:26px 0 0}
+.footer-links{display:flex;flex-direction:column;gap:13px}
+.footer-links span{color:#e97a7b;font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+.footer-links a,.footer-links button{color:#b7c3d0;text-align:left;font-size:11px;padding:0;transition:color .25s;width:max-content}
+.footer-links a:hover,.footer-links button:hover{color:#fff}
+.footer-bottom{border-top:1px solid #29405d;padding-top:20px;display:flex;justify-content:space-between;color:#8497ab;font-size:9px}
+.footer-bottom span:last-child{color:#b6c4d1;font-weight:800;letter-spacing:.1em}
+.footer-bottom i{display:inline-block;width:4px;height:4px;background:var(--red);border-radius:50%;margin:0 7px 2px}
+
+/* floating + mobile bar */
+.floating-wa{position:fixed;right:25px;bottom:25px;z-index:55;background:var(--green);color:#fff;border-radius:50px;display:flex;align-items:center;gap:9px;padding:13px 18px 13px 15px;font-size:11px;font-weight:800;box-shadow:0 9px 22px rgba(6,59,32,.28);transition:transform .3s var(--ease),box-shadow .3s}
+.floating-wa:hover{transform:translateY(-4px);box-shadow:0 16px 30px rgba(6,59,32,.34)}
+.floating-wa svg{width:20px;height:20px}
+.mobile-bar{display:none}
+
+/* ---------- responsive ---------- */
+@media(max-width:900px){
+  .wrap{width:min(100% - 36px,680px)}
+  .hero-content{width:min(100% - 36px,680px)}
+  .nav{gap:14px}.nav button{font-size:11px}
+  .hero{min-height:auto}
+  .hero-content{grid-template-columns:1fr;gap:48px;padding:70px 0 90px}
+  .media-frame{max-width:610px}
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .trust-intro{grid-column:span 2}
+  .trust-item{border-top:1px solid var(--line);border-left:0;padding:20px 0 0}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .coverage-grid,.why-grid,.quote-grid,.faq-grid,.contact-grid,.route-inner,.directions-inner{grid-template-columns:1fr;gap:52px}
+  .resource-grid{grid-template-columns:1fr;gap:20px;justify-items:start}
+  .direct-contact{margin-top:36px}
+  .section{padding:90px 0}
+  .coverage-section,.quote-section{padding:90px 0}
+}
+@media(max-width:640px){
+  .wrap,.hero-content{width:calc(100% - 32px)}
+  .header-inner{height:70px}
+  .brand-mark{width:38px;height:38px}
+  .brand-copy strong{font-size:14px}
+  .brand-copy small{font-size:6px}
+  .nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;padding:20px 16px;box-shadow:0 15px 24px rgba(7,31,65,.08);flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid #edf0f4}
+  .nav.open{display:flex}
+  .nav button{padding:14px;text-align:left;font-size:13px}
+  .nav button::after{display:none}
+  .nav-cta{justify-content:center;margin-top:8px}
+  .menu-button{display:block}
+  .hero h1{font-size:46px}
+  .hero-lead{font-size:14px}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .hero-proof{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+  .media-frame{border-radius:3px 26px 3px 26px}
+  .hero-stamp{left:17px;bottom:18px}
+  .trust-grid{grid-template-columns:1fr;padding:24px 0;gap:16px}
+  .trust-intro{grid-column:auto}
+  .section-head{display:block;margin-bottom:34px}
+  .section-head>p{margin-top:20px}
+  .services-grid{gap:8px}
+  .service-card{padding:18px;min-height:190px}
+  .service-card h3{font-size:15px;margin-top:20px}
+  .destination-list{gap:14px 5px}
+  .map-card{aspect-ratio:1.1}
+  .process-grid{display:block}
+  .process-step{border-right:0;border-bottom:1px solid var(--line);margin:0;padding:24px 0}
+  .rate-grid{grid-template-columns:1fr 1fr}
+  .rate-card{padding:18px 15px}
+  .rate-card strong{font-size:26px}
+  .pricing-top{display:block}
+  .pricing-note{margin-top:24px}
+  .quote-form{padding:26px 18px}
+  .form-row{grid-template-columns:1fr;gap:0}
+  .contact-details{display:flex;flex-direction:column;gap:26px}
+  .final-inner{flex-wrap:wrap}
+  .final-inner .button{width:100%;margin-left:40px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:36px}
+  .footer-top>div:first-child{grid-column:span 2}
+  .footer-bottom{display:block;line-height:1.9}
+  .footer-bottom span:last-child{display:block;margin-top:6px}
+  .floating-wa{right:16px;bottom:78px;padding:12px}
+  .floating-wa span{display:none}
+  .mobile-bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:54;box-shadow:0 -5px 20px rgba(7,31,65,.1)}
+  .mobile-bar button{padding:16px 8px;display:flex;align-items:center;justify-content:center;gap:7px;font-size:11px;font-weight:800;color:#fff}
+  .mobile-bar button svg{width:16px;height:16px}
+  .mobile-bar .mb-wa{background:var(--green)}
+  .mobile-bar .mb-quote{background:var(--red)}
+  body{padding-bottom:52px}
+}
+</style>
+</head>
+<body id="top">
+<div class="grain" aria-hidden="true"></div>
+
+<header class="header" id="siteHeader" data-testid="sticky-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" data-testid="brand-logo" aria-label="SY International home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none"><rect x="10" y="10" width="46" height="46" rx="11" fill="#e33435"/><rect x="6" y="6" width="46" height="46" rx="11" fill="#071f41"/><text x="29" y="38" font-family="Outfit,Arial" font-size="25" font-weight="800" fill="#fff" text-anchor="middle">S<tspan fill="#e33435">Y</tspan></text></svg>
+      </span>
+      <span class="brand-copy"><strong>SY <em>INTERNATIONAL</em></strong><small>AIR COURIER &amp; LOGISTICS</small></span>
+    </a>
+    <nav class="nav" id="siteNav" data-testid="desktop-navigation">
+      <button data-nav="services" data-testid="nav-services-link">Services</button>
+      <button data-nav="coverage" data-testid="nav-coverage-link">Coverage</button>
+      <button data-nav="pricing" data-testid="nav-pricing-link">USA DDP Rates</button>
+      <button data-nav="contact" data-testid="nav-contact-link">Contact</button>
+      <button class="nav-cta" data-nav="quote" data-testid="nav-quote-button">Get a quote
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </button>
+    </nav>
+    <button class="menu-button" id="menuButton" aria-label="Toggle navigation" data-testid="mobile-menu-button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" data-testid="hero-section">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div>
+        <div class="eyebrow"><span class="pulse-dot"></span> Fast <i></i> Safe <i></i> Reliable</div>
+        <h1>
+          <span class="line"><span class="line-inner">Send your shipments</span></span>
+          <span class="line"><span class="line-inner"><span class="accent">worldwide</span> with</span></span>
+          <span class="line"><span class="line-inner">confidence.</span></span>
+        </h1>
+        <p class="hero-lead">Fast, safe and reliable international air courier &amp; logistics solutions for documents, parcels, personal shipments and commercial consignments.</p>
+        <div class="hero-actions">
+          <button class="button button-red" data-nav="quote" data-testid="hero-get-quote-button">Get a free quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </button>
+          <button class="button button-ghost" data-wa data-testid="hero-whatsapp-button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.4 8.4c-1.5 0-3-.4-4.2-1.1L3 20l1.2-5.3A8.4 8.4 0 1 1 21 11.5z"/></svg>
+            Chat on WhatsApp
+          </button>
+        </div>
+        <div class="hero-proof">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg>Worldwide service</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5c0 4.6 3.2 8.4 7.5 10 4.3-1.6 7.5-5.4 7.5-10V6L12 3z"/><path d="m9 12 2 2 4-4"/></svg>Secure delivery</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Door-to-door service</span>
+        </div>
+      </div>
+      <div class="hero-media" id="heroMedia">
+        <div class="media-frame" id="mediaFrame">
+          <img id="heroImg" src="https://images.unsplash.com/photo-1787025214016-2e91e4c68880?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwyfHxjYXJnbyUyMGFpcnBsYW5lJTIwY2FyZ28lMjBsb2dpc3RpY3MlMjBhaXJwb3J0fGVufDB8fHx8MTc5MDMxNDk2OXww&amp;ixlib=rb-4.1.0&amp;q=85" alt="Cargo aircraft prepared for international logistics">
+          <div class="media-overlay"></div>
+          <div class="hero-stamp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5c1.5-1.5 1.5-3 .8-3.8-.7-.7-2.2-.7-3.7.8L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.4-.1.9.3 1.2L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.6 5.3c.3.4.8.5 1.2.3l.5-.3c.4-.2.6-.6.5-1.1z"/></svg>
+            <strong>Across borders.</strong><small>From Mumbai to the world.</small>
+          </div>
+        </div>
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true" data-testid="editorial-marquee">
+    <div class="marquee-track" id="marqueeTrack">
+      <span><em>SY International</em><i class="dot"></i>Fast<i class="dot"></i>Safe<i class="dot"></i>Reliable<i class="dot"></i><em>Mumbai to the world</em><i class="dot"></i>Air Courier &amp; Logistics<i class="dot"></i></span>
+      <span><em>SY International</em><i class="dot"></i>Fast<i class="dot"></i>Safe<i class="dot"></i>Reliable<i class="dot"></i><em>Mumbai to the world</em><i class="dot"></i>Air Courier &amp; Logistics<i class="dot"></i></span>
+    </div>
+  </div>
+
+  <!-- TRUST -->
+  <section class="trust-strip" data-testid="trust-value-section">
+    <div class="wrap trust-grid">
+      <div class="trust-intro" data-reveal><span class="trust-number">01</span><div><strong>Delivering trust<br>across the globe.</strong><span>Professional support for every shipment.</span></div></div>
+      <div class="trust-item" data-reveal style="--d:.08s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5c0 4.6 3.2 8.4 7.5 10 4.3-1.6 7.5-5.4 7.5-10V6L12 3z"/><path d="m9 12 2 2 4-4"/></svg><div><strong>Secure handling</strong><span>Care at every step</span></div></div>
+      <div class="trust-item" data-reveal style="--d:.16s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><strong>Clear communication</strong><span>Support when you need it</span></div></div>
+      <div class="trust-item" data-reveal style="--d:.24s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg><div><strong>Door-to-door service</strong><span>Convenience, made simple</span></div></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services" data-testid="services-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div data-reveal><div class="section-label">What we handle</div><h2>Everything important,<br><span class="accent">sent with care.</span></h2></div>
+        <p data-reveal style="--d:.1s">From a single document to a commercial consignment, our service options are built around the way people and businesses ship internationally.</p>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- COVERAGE -->
+  <section class="coverage-section" id="coverage" data-testid="coverage-section">
+    <div class="wrap coverage-grid">
+      <div class="coverage-copy" data-reveal>
+        <div class="section-label on-dark">Our reach</div>
+        <h2>One trusted partner.<br><span class="accent">Many destinations.</span></h2>
+        <p>Wherever your shipment is headed, start with a clear conversation about what you need to send and where it needs to go.</p>
+        <div class="destination-list" id="destinationList"></div>
+        <button class="button button-red" data-wa data-testid="coverage-whatsapp-button">Ask about your destination
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </button>
+      </div>
+      <div class="map-card" data-reveal style="--d:.12s">
+        <img id="mapImg" src="https://images.unsplash.com/photo-1713098965471-d324f294a71d?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwyfHxnbG9iYWwlMjBzaGlwcGluZyUyMGxvZ2lzdGljcyUyMHdvcmxkJTIwbWFwJTIwY29udGFpbmVyfGVufDB8fHx8MTc5MDMxNDk3Mnww&amp;ixlib=rb-4.1.0&amp;q=85" alt="Global shipping routes and cargo containers">
+        <div class="map-caption">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg>
+          <span><strong>Worldwide</strong><small>Service coverage</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROUTE PROMPTS -->
+  <section class="route-section" data-testid="route-prompts-section">
+    <div class="wrap route-inner">
+      <div data-reveal>
+        <div class="section-label">Route prompts</div>
+        <h2>Start with the<br><span class="accent">right details.</span></h2>
+        <p class="route-copy">Choose a popular destination and we’ll surface the first questions worth answering.</p>
+      </div>
+      <div class="route-panel" data-reveal style="--d:.12s">
+        <div class="route-tabs" id="routeTabs"></div>
+        <div class="route-question">
+          <small id="routeName">FOR CANADA</small>
+          <p id="routeQuestion"></p>
+          <button class="text-link" data-nav="quote" data-testid="route-prompt-quote-button">Use this route for a quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process-section" data-testid="process-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div data-reveal><div class="section-label">How it works</div><h2>Simple from the<br><span class="accent">first message.</span></h2></div>
+        <p data-reveal style="--d:.1s">Good logistics begins with clarity. Tell us about your shipment and we’ll guide the next conversation.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step" data-reveal data-testid="process-step-01"><span>01</span><div><h3>Share your shipment</h3><p>Tell us what you’re sending, where it’s going and your approximate weight.</p></div></div>
+        <div class="process-step" data-reveal style="--d:.1s" data-testid="process-step-02"><span>02</span><div><h3>Receive clear guidance</h3><p>Our team reviews the details and shares the relevant next steps.</p></div></div>
+        <div class="process-step" data-reveal style="--d:.2s" data-testid="process-step-03"><span>03</span><div><h3>Send with confidence</h3><p>Move forward with a shipment plan that fits your needs.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section" id="pricing" data-testid="pricing-section">
+    <div class="wrap">
+      <div class="pricing-top">
+        <div data-reveal><div class="section-label">Reference pricing</div><h2>USA DDP rates,<br><span class="accent">made visible.</span></h2></div>
+        <div class="pricing-note" data-reveal style="--d:.1s"><span>USA DDP</span><p>Duty Paid reference rates for qualifying shipments.</p></div>
+      </div>
+      <div class="rate-grid">
+        <div class="rate-card" data-reveal data-testid="rate-card-0"><small>11 KG &amp; ABOVE</small><strong>₹875</strong><span>per kg</span></div>
+        <div class="rate-card" data-reveal style="--d:.07s" data-testid="rate-card-1"><small>21 KG &amp; ABOVE</small><strong>₹795</strong><span>per kg</span></div>
+        <div class="rate-card" data-reveal style="--d:.14s" data-testid="rate-card-2"><small>45 KG TO 69 KG</small><strong>₹750</strong><span>per kg</span></div>
+        <div class="rate-card" data-reveal style="--d:.21s" data-testid="rate-card-3"><small>71 KG TO 99 KG</small><strong>₹699</strong><span>per kg</span></div>
+      </div>
+      <div class="ipf-row" data-reveal><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></svg>IPF charges</span><strong>₹450 <small>per box</small></strong></div>
+      <p class="disclaimer" data-testid="pricing-disclaimer">Rates may vary depending on shipment details, destination, customs requirements and current pricing. Please confirm the applicable rate before booking.</p>
+    </div>
+  </section>
+
+  <!-- RESOURCE STRIP -->
+  <section class="resource-strip" data-testid="resource-strip">
+    <div class="wrap resource-grid">
+      <div class="resource-intro" data-reveal>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+        <div><strong>First shipment?</strong><span>Download a simple checklist before you request a quote.</span></div>
+      </div>
+      <button class="text-link" onclick="downloadChecklist()" data-testid="download-checklist-button">Download checklist
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </button>
+      <button class="text-link" onclick="printRateSheet()" data-testid="print-rate-sheet-button">Print USA DDP rate sheet
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section why-section" data-testid="why-us-section">
+    <div class="wrap why-grid">
+      <div data-reveal>
+        <div class="section-label">Why SY International</div>
+        <h2>Clarity you can<br><span class="accent">count on.</span></h2>
+        <p class="lead-copy">International shipping can feel complicated. We keep the conversation direct, the options clear and the next step easy to understand.</p>
+        <button class="text-link" data-nav="quote" data-testid="why-quote-link">Start a conversation
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </button>
+      </div>
+      <div class="why-points">
+        <div class="why-point" data-reveal><span>01</span><div><h3>Built around your shipment</h3><p>We start with the details that matter: what you’re sending, where it’s going and how much.</p></div></div>
+        <div class="why-point" data-reveal style="--d:.08s"><span>02</span><div><h3>A human point of contact</h3><p>Speak directly with Santlal Yadav and the SY International team on the channel you already use.</p></div></div>
+        <div class="why-point" data-reveal style="--d:.16s"><span>03</span><div><h3>Honest, practical guidance</h3><p>Pricing and customs requirements can vary. We make that clear from the start.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section" id="quote" data-testid="quote-section">
+    <div class="wrap quote-grid">
+      <div class="quote-intro" data-reveal>
+        <div class="section-label on-dark">Get in touch</div>
+        <h2>Let’s move your<br><span class="accent">next shipment.</span></h2>
+        <p>Share a few details and your enquiry will open directly in WhatsApp, ready for our team.</p>
+        <div class="direct-contact">
+          <span>Prefer to call?</span>
+          <a href="tel:+919029371130" data-testid="quote-phone-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg>+91 9029371130</a>
+        </div>
+      </div>
+      <form class="quote-form" id="quoteForm" data-reveal style="--d:.12s" data-testid="quote-form">
+        <div class="form-heading"><span>Quick quote</span><strong>Tell us about it.</strong></div>
+        <div class="form-row">
+          <label>Full name<input required name="name" placeholder="Your name" data-testid="quote-name-input"></label>
+          <label>Mobile / WhatsApp<input required name="phone" placeholder="+91 ..." data-testid="quote-phone-input"></label>
+        </div>
+        <div class="form-row">
+          <label>Pickup city<input required name="pickup" placeholder="Mumbai" data-testid="quote-pickup-input"></label>
+          <label>Destination country<input required name="destination" id="destinationInput" placeholder="Canada" data-testid="quote-destination-input"></label>
+        </div>
+        <div class="form-row">
+          <label>Shipment type<select required name="type" data-testid="quote-type-select"><option value="">Select one</option></select></label>
+          <label>Approx. weight<input required name="weight" placeholder="e.g. 12 kg" data-testid="quote-weight-input"></label>
+        </div>
+        <label>Shipment details<textarea required name="details" placeholder="Anything we should know?" data-testid="quote-details-input"></textarea></label>
+        <button class="button button-red form-submit" type="submit" data-testid="quote-submit-button">Open WhatsApp enquiry
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+        <small class="form-footnote">Your details will be shared with SY International in WhatsApp.</small>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section" data-testid="faq-section">
+    <div class="wrap faq-grid">
+      <div data-reveal>
+        <div class="section-label">Good to know</div>
+        <h2>Questions,<br><span class="accent">answered.</span></h2>
+        <p class="lead-copy">Still need a little more clarity? Start a WhatsApp conversation and our team can discuss the specifics of your shipment.</p>
+      </div>
+      <div class="faq-list" id="faqList" data-reveal style="--d:.1s"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact" data-testid="contact-section">
+    <div class="wrap contact-grid">
+      <div data-reveal>
+        <div class="section-label">Visit or connect</div>
+        <h2>Here when you<br><span class="accent">need us.</span></h2>
+        <p class="lead-copy">Reach out directly for a shipment conversation or visit our Mumbai office.</p>
+      </div>
+      <div class="contact-details">
+        <div class="contact-detail" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><small>Office</small><address>Jivan Sangram Society, A-2,<br>Opp. L&amp;T Gate No.06, Shiv Shakti Nagar,<br>Saki Vihar Road, Andheri (East),<br>Mumbai - 400072</address></div>
+        </div>
+        <div class="contact-detail" data-reveal style="--d:.08s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg>
+          <div><small>Call Santlal Yadav</small><a href="tel:+919029371130" data-testid="primary-phone-link">+91 9029371130</a><a href="tel:+918417093444" data-testid="secondary-phone-link">+91 8417093444</a></div>
+        </div>
+        <div class="contact-detail" data-reveal style="--d:.16s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <div><small>Email</small><a href="mailto:syinternationalaircourier@gmail.com" data-testid="email-link">syinternationalaircourier@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECTIONS -->
+  <section class="directions-section" data-testid="directions-section">
+    <div class="wrap directions-inner">
+      <div data-reveal><div class="section-label">Find the office</div><h2>A clear route to<br><span class="accent">our door.</span></h2></div>
+      <a class="directions-card" data-reveal style="--d:.1s" href="https://www.google.com/maps/search/?api=1&amp;query=Jivan+Sangram+Society+A-2+Opp+L%26T+Gate+No.06+Saki+Vihar+Road+Andheri+East+Mumbai+400072" target="_blank" rel="noreferrer" data-testid="office-directions-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span><strong>Open office directions</strong><small>Jivan Sangram Society, A-2, Opp. L&amp;T Gate No.06, Andheri (East), Mumbai - 400072</small></span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" data-testid="final-cta-section">
+    <div class="wrap final-inner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+      <div><small>READY WHEN YOU ARE</small><h2>Let’s get your shipment moving.</h2></div>
+      <button class="button button-white" data-nav="quote" data-testid="final-quote-button">Get a free quote
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+      </button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-top">
+    <div>
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><rect x="10" y="10" width="46" height="46" rx="11" fill="#e33435"/><rect x="6" y="6" width="46" height="46" rx="11" fill="#0a2c5b"/><text x="29" y="38" font-family="Outfit,Arial" font-size="25" font-weight="800" fill="#fff" text-anchor="middle">S<tspan fill="#e33435">Y</tspan></text></svg></span>
+        <span class="brand-copy"><strong>SY <em>INTERNATIONAL</em></strong><small>AIR COURIER &amp; LOGISTICS</small></span>
+      </a>
+      <p>Fast, safe and reliable international air courier &amp; logistics from Mumbai to the world.</p>
+    </div>
+    <div class="footer-links">
+      <span>Explore</span>
+      <button data-nav="services" data-testid="footer-services-link">Services</button>
+      <button data-nav="pricing" data-testid="footer-pricing-link">USA DDP rates</button>
+      <button data-nav="contact" data-testid="footer-contact-link">Contact</button>
+    </div>
+    <div class="footer-links">
+      <span>Connect</span>
+      <a href="tel:+919029371130" data-testid="footer-phone-link">+91 9029371130</a>
+      <a href="mailto:syinternationalaircourier@gmail.com" data-testid="footer-email-link">Email us</a>
+      <button data-wa data-testid="footer-whatsapp-link">WhatsApp</button>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year">2026</span> SY International. All rights reserved.</span>
+    <span>FAST <i></i> SAFE <i></i> RELIABLE</span>
+  </div>
+</footer>
+
+<button class="floating-wa" data-wa aria-label="Chat on WhatsApp" data-testid="floating-whatsapp-button">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.4 8.4c-1.5 0-3-.4-4.2-1.1L3 20l1.2-5.3A8.4 8.4 0 1 1 21 11.5z"/></svg>
+  <span>Chat with us</span>
+</button>
+<div class="mobile-bar" data-testid="mobile-bottom-bar">
+  <button class="mb-wa" data-wa data-testid="mobile-whatsapp-button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.4 8.4c-1.5 0-3-.4-4.2-1.1L3 20l1.2-5.3A8.4 8.4 0 1 1 21 11.5z"/></svg>WhatsApp</button>
+  <button class="mb-quote" data-nav="quote" data-testid="mobile-quote-button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>Get free quote</button>
+</div>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+const WA_NUMBER = "919029371130";
+const DEFAULT_MSG = "Hello SY International, I would like to get a quotation for an international shipment. Please share the required details.";
+function openWhatsApp(message = DEFAULT_MSG) {
+  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+}
+
+/* ---------- data ---------- */
+const SERVICES = [
+  ["Documents", "Important papers, handled with care.", '<path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>'],
+  ["Parcels", "Personal packages headed overseas.", '<path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/>'],
+  ["Personal Baggage", "Extra luggage made simpler.", '<rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/>'],
+  ["Household Items", "Move meaningful essentials abroad.", '<path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/>'],
+  ["Food Items", "Packed food items for eligible routes.", '<path d="M4 3v7a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V3M6 3v18M18 3c-2 0-3 2.5-3 5v4h3v9"/>'],
+  ["Medicines (If Allowed)", "Subject to applicable rules and approval.", '<path d="m10.5 20.5 7-7a4.95 4.95 0 1 0-7-7l-7 7a4.95 4.95 0 1 0 7 7z"/><path d="m8.5 8.5 7 7"/>'],
+  ["Gifts & Non-Commercial", "Thoughtful deliveries across borders.", '<rect x="3" y="8" width="18" height="4"/><path d="M5 12v9h14v-9M12 8v13M12 8s-1.5-4-4-4-2.5 4 0 4h4zm0 0s1.5-4 4-4 2.5 4 0 4h-4z"/>'],
+  ["Commercial Shipments", "Reliable support for business consignments.", '<path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/>'],
+];
+const DESTINATIONS = ["Canada", "United Kingdom", "Europe", "Australia", "New Zealand", "GCC Countries", "Worldwide"];
+const ROUTE_PROMPTS = {
+  "Canada": "Is this personal baggage, a parcel, or documents? Share the destination city and approximate weight.",
+  "United Kingdom": "Is the shipment personal or commercial? Share the UK destination postcode and approximate weight.",
+  "Europe": "Which European country and city is the shipment going to? Tell us the item type and approximate weight.",
+  "Australia": "What is the destination city in Australia, and are you sending personal items, documents or a parcel?",
+  "GCC Countries": "Which GCC country and city is the shipment going to? Share the item type, box count and approximate weight."
+};
+const FAQS = [
+  ["What can I send internationally?", "We support documents, parcels, personal baggage, household items, eligible food items, gifts, non-commercial items and commercial shipments. Each shipment is subject to destination and carrier requirements."],
+  ["Are medicines accepted?", "Medicines are accepted only if allowed under applicable rules and with required approval. Please share details with our team before sending."],
+  ["How are the USA DDP rates applied?", "The listed rates are reference USA DDP rates by weight slab. Final pricing may vary depending on shipment details, destination, customs requirements and current pricing."],
+  ["How do I request a quote?", "Use the quote form or WhatsApp button. Your details will open in WhatsApp as a pre-filled message for the team to review."]
+];
+
+/* ---------- render dynamic blocks ---------- */
+document.getElementById("servicesGrid").innerHTML = SERVICES.map(([name, text, icon], i) => `
+  <article class="service-card" data-reveal style="--d:${(i % 4) * 0.07}s" data-testid="service-card-${i}">
+    <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${icon}</svg></div>
+    <span class="service-index">0${i + 1}</span>
+    <h3>${name}</h3><p>${text}</p>
+    <svg class="service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+  </article>`).join("");
+
+document.getElementById("destinationList").innerHTML = DESTINATIONS.map((d, i) => `
+  <span data-testid="destination-${i}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>${d}</span>`).join("");
+
+const typeSelect = document.querySelector('[name="type"]');
+typeSelect.insertAdjacentHTML("beforeend", SERVICES.map(([name]) => `<option>${name}</option>`).join(""));
+
+document.getElementById("faqList").innerHTML = FAQS.map(([q, a], i) => `
+  <div class="faq-item${i === 0 ? " open" : ""}">
+    <button data-testid="faq-question-${i}" aria-expanded="${i === 0}"><span>${q}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="faq-answer"><div><p data-testid="faq-answer-${i}">${a}</p></div></div>
+  </div>`).join("");
+document.querySelectorAll(".faq-item > button").forEach(btn => btn.addEventListener("click", () => {
+  const item = btn.parentElement, wasOpen = item.classList.contains("open");
+  document.querySelectorAll(".faq-item").forEach(f => { f.classList.remove("open"); f.querySelector("button").setAttribute("aria-expanded", "false"); });
+  if (!wasOpen) { item.classList.add("open"); btn.setAttribute("aria-expanded", "true"); }
+}));
+
+/* ---------- route prompts ---------- */
+const routeTabs = document.getElementById("routeTabs");
+const routeName = document.getElementById("routeName");
+const routeQuestion = document.getElementById("routeQuestion");
+const destinationInput = document.getElementById("destinationInput");
+routeTabs.innerHTML = Object.keys(ROUTE_PROMPTS).map(r =>
+  `<button class="route-tab" data-route="${r}" data-testid="route-tab-${r.toLowerCase().replaceAll(" ", "-")}">${r}</button>`).join("");
+function chooseRoute(route) {
+  document.querySelectorAll(".route-tab").forEach(b => b.classList.toggle("active", b.dataset.route === route));
+  routeName.textContent = "FOR " + route.toUpperCase();
+  routeQuestion.classList.add("swap");
+  setTimeout(() => { routeQuestion.textContent = ROUTE_PROMPTS[route]; routeQuestion.classList.remove("swap"); }, 180);
+  destinationInput.value = route;
+}
+routeTabs.addEventListener("click", e => { const t = e.target.closest(".route-tab"); if (t) chooseRoute(t.dataset.route); });
+chooseRoute("Canada");
+
+/* ---------- smooth scrolling (Lenis with fallback) ---------- */
+let lenis = null;
+if (typeof Lenis !== "undefined") {
+  lenis = new Lenis({ duration: 1.15, smoothWheel: true });
+  const raf = t => { lenis.raf(t); requestAnimationFrame(raf); };
+  requestAnimationFrame(raf);
+}
+const nav = document.getElementById("siteNav");
+function scrollToId(id) {
+  nav.classList.remove("open");
+  const el = document.getElementById(id);
+  if (!el) return;
+  if (lenis) lenis.scrollTo(el, { offset: -70 });
+  else el.scrollIntoView({ behavior: "smooth" });
+}
+document.querySelectorAll("[data-nav]").forEach(b => b.addEventListener("click", () => scrollToId(b.dataset.nav)));
+document.querySelectorAll("[data-wa]").forEach(b => b.addEventListener("click", () => openWhatsApp()));
+document.getElementById("menuButton").addEventListener("click", () => nav.classList.toggle("open"));
+
+/* ---------- header state ---------- */
+const header = document.getElementById("siteHeader");
+addEventListener("scroll", () => header.classList.toggle("scrolled", scrollY > 24), { passive: true });
+
+/* ---------- scroll reveals ---------- */
+const io = new IntersectionObserver(entries => entries.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+}), { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+document.querySelectorAll("[data-reveal]").forEach(el => io.observe(el));
+
+/* ---------- hero parallax ---------- */
+const heroImg = document.getElementById("heroImg");
+const mapImg = document.getElementById("mapImg");
+const heroMedia = document.getElementById("heroMedia");
+const fine = matchMedia("(pointer:fine)").matches;
+if (fine) {
+  heroMedia.addEventListener("mousemove", e => {
+    const r = heroMedia.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+    heroImg.style.transform = `translate(${x * -14}px, ${y * -14}px)`;
+  });
+  heroMedia.addEventListener("mouseleave", () => heroImg.style.transform = "");
+}
+function scrollParallax() {
+  const y = scrollY;
+  if (y < innerHeight * 1.2) heroImg.style.translate = `0 ${y * 0.08}px`;
+  const r = mapImg.getBoundingClientRect();
+  if (r.top < innerHeight && r.bottom > 0) mapImg.style.transform = `translateY(${(r.top - innerHeight / 2) * -0.06}px)`;
+}
+addEventListener("scroll", () => requestAnimationFrame(scrollParallax), { passive: true });
+
+/* ---------- quote form → WhatsApp ---------- */
+document.getElementById("quoteForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = new FormData(e.target);
+  openWhatsApp(`Hello SY International, I would like to get a quotation for an international shipment.\n\nFull Name: ${f.get("name")}\nMobile / WhatsApp: ${f.get("phone")}\nPickup City: ${f.get("pickup")}\nDestination: ${f.get("destination")}\nShipment Type: ${f.get("type")}\nApprox. Weight: ${f.get("weight")}\nShipment Details: ${f.get("details")}`);
+});
+
+/* ---------- checklist download ---------- */
+function downloadChecklist() {
+  const checklist = `SY INTERNATIONAL
+INTERNATIONAL SHIPPING CHECKLIST
+
+Before you request a quote
+[ ] Sender name and mobile number
+[ ] Pickup city and complete pickup address
+[ ] Destination country and delivery address
+[ ] Shipment type and a short item description
+[ ] Approximate weight and number of boxes
+[ ] Recipient contact details
+[ ] Any invoices, identification or supporting documents needed for the shipment
+
+Please remember
+- Medicines are accepted only if allowed under applicable rules and with required approval.
+- Food, gifts and commercial items may have destination-specific requirements.
+- Rates may vary depending on shipment details, destination, customs requirements and current pricing.
+
+Contact SY International
++91 9029371130 | +91 8417093444
+syinternationalaircourier@gmail.com
+`;
+  const url = URL.createObjectURL(new Blob([checklist], { type: "text/plain;charset=utf-8" }));
+  const link = document.createElement("a");
+  link.href = url; link.download = "sy-international-shipping-checklist.txt"; link.click();
+  URL.revokeObjectURL(url);
+}
+
+/* ---------- printable rate sheet ---------- */
+function printRateSheet() {
+  const rows = [["11 KG & ABOVE", "₹875"], ["21 KG & ABOVE", "₹795"], ["45 KG TO 69 KG", "₹750"], ["71 KG TO 99 KG", "₹699"]];
+  const sheet = window.open("", "_blank", "width=760,height=760");
+  if (!sheet) return;
+  sheet.document.write(`<html><head><title>SY International | USA DDP Rates</title><style>body{font-family:Arial,sans-serif;color:#071f41;padding:48px;max-width:680px;margin:auto}h1{font-size:28px;margin:0 0 4px}p{color:#64748b;line-height:1.6}.rule{height:4px;background:#e33435;margin:28px 0}table{width:100%;border-collapse:collapse;margin:24px 0}th,td{text-align:left;padding:15px;border-bottom:1px solid #dbe2ea}th{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#64748b}td:last-child{font-weight:bold;font-size:20px}.ipf{padding:16px;background:#071f41;color:#fff;display:flex;justify-content:space-between}.note{font-size:11px;margin-top:25px}@media print{body{padding:0}}</style></head><body><h1>SY <span style="color:#e33435">INTERNATIONAL</span></h1><div>Air Courier & Logistics · Fast · Safe · Reliable</div><div class="rule"></div><h2>USA DDP Reference Rates</h2><p>Duty Paid reference rates for qualifying shipments.</p><table><tr><th>Weight slab</th><th>Rate per kg</th></tr>${rows.map(([w, p]) => `<tr><td>${w}</td><td>${p}</td></tr>`).join("")}</table><div class="ipf"><span>IPF charges</span><strong>₹450 per box</strong></div><p class="note">Rates may vary depending on shipment details, destination, customs requirements and current pricing. Please confirm the applicable rate before booking.</p><p>SY International · +91 9029371130 · syinternationalaircourier@gmail.com</p></body></html>`);
+  sheet.document.close(); sheet.focus(); sheet.print();
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"7f7b0fd8732c4326aae4b9d58d5c514a","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
